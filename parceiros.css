@@ -1,0 +1,216 @@
+a {
+    text-decoration: none;
+}
+
+.grid-conteiner a {
+    font-weight: 800;
+}
+
+.grid-conteiner2 a {
+    font-weight: 800;
+}
+
+
+header {
+    background-color: #fff5e6;
+}
+
+.boxuser{
+
+    display: none;
+    border: solid #3a2300;
+    background-color: #423F32;
+    right: 1%;
+    top: 100px;
+    position: absolute;
+    width: 300px;
+    height: 150px;
+}
+
+
+.Cabeçalho {
+
+    display: flex;
+    font-family: sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    gap: 10%;
+    text-transform: uppercase;
+}
+
+.grid-conteiner {
+
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    grid-auto-rows: auto;
+    gap: 90px;
+    padding: 10px;
+}
+
+.grid-conteiner2 {
+
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    grid-auto-rows: auto;
+    gap: 75px;
+    padding: 10px;
+
+}
+
+.grid-item {
+    background-color: #fff5e6;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.50s ease;
+    border: #423F32;
+    border-style: solid;
+    color: #201f19;
+}
+
+.grid-item2 {
+    background-color: #fff5e6;
+    padding: 20px;
+    text-align: center;
+    border: #423F32;
+    border-style: solid;
+    transition: transform 0.50s ease;
+    color: #201f19;
+}
+
+.grid-item:hover {
+    transform: scale(1.10);
+}
+
+.grid-item2:hover {
+    transform: scale(1.10);
+}
+
+li a:hover {
+    background-color: #3963367a;
+    transform: scale(0.9);
+    transition: transform 0.5s ease;
+}
+
+.logo {
+    position: absolute;
+    left: 46.5%;
+    bottom: 74.8%;
+    display: block;
+    height: 320px;
+    width: 170px;
+    padding-top: 0.1%;
+    margin: 0px;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+
+
+.usuario {
+    position: absolute;
+    display: block;
+    height: 65px;
+    width: 70px;
+    padding-top: 0.7%;
+    padding-right: 3%;
+    transition: transform 0.2s ease;
+    left: 93%;
+    top: 1%;
+}
+
+.usuario:hover {
+    transform: scale(1.05);
+}
+
+@media(max-width: 600px) {
+    li {
+        text-align: center;
+        float: none;
+    }
+}
+
+ul.anuncio {
+    font-size: 10px;
+    text-align: center;
+    background-color: #201f19;
+    color: #f0f0f0;
+}
+
+marquee {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+body {
+    background-color: #423F32;
+    font-family: sans-serif;
+
+}
+
+.meio {
+    background-color: #3d6132;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    padding-bottom: 7.3%;
+    text-transform: uppercase;
+    color: #fff5e6;
+}
+
+.uber {
+    margin-left: 26%;
+    margin-top: 7%;
+    text-align: center;
+}
+
+.eats {
+    margin-left: 10%;
+    margin-top: 7%;
+    text-align: center;
+}
+
+.eats img {
+    border: solid 10px white;
+}
+
+a {
+    text-decoration: underline;
+    color: #fff5e6;
+    font-weight: 550;
+
+}
+
+
+
+footer {
+    display: flex;
+    background-color: #201f19;
+    padding: 2%;
+}
+
+.Infor {
+    display: flex;
+    text-align: left;
+    color: #fff5e6;
+    gap: 100px;
+}
+
+.iTrash {
+    position: relative;
+    left: 33%;
+    display: flex;
+    text-align: center;
+    color: #fff5e6;
+    gap: 100px;
+}
+
+.Inovatech {
+    position: relative;
+    left: 65%;
+    width: 200px;
+    height: 100px;
+}

@@ -1,0 +1,226 @@
+a {
+    text-decoration: none;
+}
+
+.grid-conteiner a {
+    font-weight: 800;
+}
+
+.grid-conteiner2 a {
+    font-weight: 800;
+}
+
+
+header {
+    background-color: #fff5e6;
+}
+
+.boxuser{
+
+    display: none;
+    border: solid #fff5e6;
+    background-color: #fff5e6;
+    right: 1%;
+    top: 100px;
+    position: absolute;
+    width: 300px;
+    height: 150px;
+}
+
+
+.Cabeçalho {
+
+    display: flex;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    justify-content: center;
+    gap: 10%;
+    text-transform: uppercase;
+}
+
+.grid-conteiner {
+
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    gap: 60px;
+    padding: 10px;
+}
+
+.grid-conteiner2 {
+
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    grid-auto-rows: auto;
+    gap: 40px;
+    padding: 10px;
+
+}
+
+.grid-item,.grid-item2 {
+    background-color: #fff5e6;
+    padding: 20px;
+    padding-right: 48px;
+    transition: transform 0.50s ease;
+    border: solid #201f19;
+    color: #201f19;
+    text-align: right;
+}
+
+
+.grid-item:hover {
+    transform: scale(1.10);
+}
+
+.grid-item2:hover {
+    transform: scale(1.10);
+}
+
+li a:hover {
+    background-color: #3963367a;
+    transform: scale(0.9);
+    transition: transform 0.5s ease;
+}
+
+.logo {
+    position: absolute;
+    left: 44.6%;
+    bottom: 74.8%;
+    display: block;
+    height: 320px;
+    width: 170px;
+    padding-top: 0.1%;
+    margin: 0px;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+
+
+.usuario {
+    position: absolute;
+    display: block;
+    height: 65px;
+    width: 70px;
+    padding-top: 0.7%;
+    padding-right: 3%;
+    transition: transform 0.2s ease;
+    left: 93%;
+    top: 1%;
+}
+
+.usuario:hover {
+    transform: scale(1.05);
+}
+
+ul.anuncio {
+    font-size: 10px;
+    text-align: center;
+    background-color: #201f19;
+    color: #f0f0f0;
+}
+
+marquee {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+body {
+    background-color: #423F32;
+    font-family: sans-serif;
+}
+
+.meio {
+    font-family: sans-serif;
+    font-size: larger;
+    display: flex;
+    background-color: #3E5B33;
+    justify-content: center;
+    color: #fff5e6;
+    padding-bottom: 5%;
+}
+
+.polar {
+    text-align: right;
+    width: 820px;
+    text-decoration: dashed;
+   
+}
+
+.boxuser{
+
+    display: none;
+    border: solid #3a2300;
+    background-color: #423F32;
+    right: 1%;
+    top: 100px;
+    position: absolute;
+    width: 300px;
+    height: 150px;
+}
+
+
+.mascote {
+    display: flex;
+    margin-left: 46%;
+    justify-content: center;
+    height: 350px;
+}
+
+.mascote a{
+    text-align: center;
+}
+
+a {
+    text-decoration: underline;
+    color: #fff5e6;
+    font-weight: 700;
+    margin-right: 20%;
+}
+
+.países {
+    padding-right: 100px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.nomes {
+    padding-left: 20%;
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+footer {
+    display: flex;
+    padding: 3.3%;
+    background-color: #201f19;
+    font-weight: 700;
+}
+
+.Infor {
+    display: flex;
+    text-align: left;
+    color: #fff5e6;
+    gap: 100px;
+}
+
+.iTrash {
+    position: relative;
+    left: 31%;
+    display: flex;
+    text-align: center;
+    color: #fff5e6;
+    gap: 100px;
+}
+
+.Inovatech {
+    position: relative;
+    left: 64%;
+    width: 200px;
+    height: 100px;
+}

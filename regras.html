@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>iTrash - Our Commitment is to the Earth</title>
+    <link rel="stylesheet" href="regras.css">
+</head>
+
+<header>
+
+    <div class="Cabeçalho">
+
+        <div class="grid-conteiner">
+           <a href="../pag_principal/main menu.html"> <div class="grid-item">INICIAL</div> </a>
+           <a href="../pag_postos/postos.html"><div class="grid-item">POSTOS</div> </a> 
+           <a href="../pag_delivery/delivery.html"><div class="grid-item">DELIVERY</div> </a>
+        </div>
+
+
+        <img class="logo" src="iTrash_Logo_2.0.svg" alt="logo">
+
+        <div class="grid-conteiner2">
+           <a href="../pag_market/market.html"><div class="grid-item2">MARKET</div> </a> 
+           <a href="../pag_sobre/sobre.html"> <div class="grid-item2">SOBRE</div> </a>
+           <a href="../pag_parceiros/parceiros.html"> <div class="grid-item2">PARCEIROS</div> </a>
+        </div>
+
+        <img id="botao" class="usuario" src="usuario-de-perfil.png" alt="usuario">
+
+    </div>
+
+    <ul class="anuncio">
+        <marquee behavior="scroll" direction="left">CONHEÇA MAIS SOBRE O NOSSO MASCOTE VERDINHO!</marquee>
+    </ul>
+
+    <div id="elemento" class="boxuser">
+        <form>
+            <img src="email.svg" alt="email">
+            <input type="text" placeholder="E-mail"> <br>
+            <img src="senha.svg" alt="senha">
+            <input type="text" placeholder="Senha">
+            <input type="button" value="Enviar">
+            <input type="button" value="Esqueci minha Senha"> <br> <br>
+            <input type="button" value="Cadastre-Se">
+        </form>
+        </form>
+    </div>
+
+</header>
+
+<body>
+
+    <div class="meio">
+
+        <img class="polar" src="reipolar.svg" alt="tartaruga">
+        <div class="text">
+            <h2>Olá! Eu sou o Rei Polar! Aqui estão alguns passos de como <br>
+                você pode ter a oportunidade de ter seu nome no nosso Ranking! <br> <br>
+
+                Use um dos nossos postos inteligentes para descartar seu lixo! <br>
+                obs: Tenha em mãos seus dados cadastrais do nosso site! <br> <br>
+
+                A cada 1KG de lixo descartado, você recebe 100 pontos no nosso Ranking! <br> <br>
+
+                Dica amiga: Seja constante e determinado! <br>
+                Boa Sorte e ótima reciclagem!
+ 
+            </h2>
+        </div>
+
+      <a href="ranking.html"> <img class="voltar" src="login-arrow-symbol-entering-back-into-a-square_icon-icons.com_73221.png" alt="voltar"> </a>  
+
+    </div>
+
+
+
+    </div>
+
+</body>
+
+<footer>
+    <div class="Infor">
+        BRASIL, SÃO PAULO <br>
+        AVENIDA FARIA LIMA - 1440 <br> <br>
+        itrashcontato@gmail.com <br>
+        (11)99667-7207 <br> <br>
+    </div>
+
+    <div class="iTrash">
+        iTrash <br>
+        Our commitment is to the Earth
+    </div>
+
+    <img class="Inovatech" src="Inovatech.svg" alt="Inovatech">
+
+</footer>
+
+<script>
+
+    //Criando variáveis constantes para obter os elementos pelo id
+    const botao = document.getElementById('botao');
+    const elemento = document.getElementById('elemento');
+    const fechar = document.getElementById('fechar')
+
+    //Código para ativar o pop-up
+    botao.addEventListener('click', function () {
+        if (elemento.style.display === 'none') {
+            elemento.style.display = 'block'
+        } else {
+            elemento.style.display = 'none';
+        }
+    });
+
+    fechar.addEventListener('click', function () {
+        elemento.style.display = 'none';
+    });
+
+
+
+</script>
+
+</html>

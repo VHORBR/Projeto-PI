@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>iTrash - Our Commitment is to the Earth</title>
+    <link rel="stylesheet" href="market.css">
+</head>
+
+<header>
+
+    <div class="Cabeçalho">
+
+        <div class="grid-conteiner">
+            <a href="../pag_principal/main menu.html">
+                <div class="grid-item">INICIAL</div>
+            </a>
+            <a href="../pag_postos/postos.html">
+                <div class="grid-item">POSTOS</div>
+            </a>
+            <a href="../pag_delivery/delivery.html">
+                <div class="grid-item">DELIVERY</div>
+            </a>
+        </div>
+
+
+        <img class="logo" src="iTrash_Logo_2.0.svg" alt="logo">
+
+        <div class="grid-conteiner2">
+            <a href="../pag_sobre/sobre.html">
+                <div class="grid-item2">SOBRE</div>
+            </a>
+            <a href="../pag_parceiros/parceiros.html">
+                <div class="grid-item2">PARCERIOS</div>
+            </a>
+            <a href="../pag_ranking/ranking.html">
+                <div class="grid-item2">RANKING</div>
+            </a>
+        </div>
+
+        <img id="botao" class="usuario" src="usuario-de-perfil.png" alt="usuario">
+    </div>
+
+    <ul class="anuncio">
+        <marquee behavior="static" direction="left">PRODUTOS 100% RECICLÁVEIS PARA SUA EMPRESA NO NOSSO MARKET PLACE!
+        </marquee>
+    </ul>
+
+    <div id="elemento" class="boxuser">
+        <form>
+            <img src="email.svg" alt="email">
+            <input type="text" placeholder="E-mail"> <br>
+            <img src="senha.svg" alt="senha">
+            <input type="text" placeholder="Senha">
+            <input type="button" value="Enviar">
+            <input type="button" value="Esqueci minha Senha"> <br> <br>
+            <input type="button" value="Cadastre-Se">
+        </form>
+        </form>
+    </div>
+
+</header>
+
+<body>
+    <button class="carousel-button prev" onclick="moveSlide(-1)">&#9664;</button>
+    <div class="product-carousel">
+        <div class="carousel-track">
+            <!-- Items -->
+         <a href="produto1.html">   <div class="product-item">
+                <img src="Reciclagem-do-papelao.png" alt="Produto 1">
+                <h3>Papelão</h3>
+                <p>Compre papelão doado e reutilize.</p>
+                <span class="price">R$ 0,20 a R$ 0,80 por KG</span> </a>
+            </div>
+            <div class="product-item">
+                <img src="Smartphones-descartados-1.jpg" alt="Produto 2">
+                <h3>Eletrônicos</h3>
+                <p>Compre Eletrônicos doado e reutilize.</p>
+                <span class="price">R$ 0,40 a R$ 4,00 por KG</span>
+            </div>
+            <div class="product-item">
+                <img src="reciclagem-de-metal-scaled.jpg" alt="Produto 3">
+                <h3>Metal</h3>
+                <p>Compre Metal doado e reutilize.</p>
+                <span class="price">R$ 6,30 a R$ 10,20 KG</span>
+            </div>
+            <div class="product-item">
+                <img src="56cc73030e21630a3e136ba5glass-041.jpeg" alt="Produto 4">
+                <h3>Vidro</h3>
+                <p>Compre Vidro doado e reutilize.</p>
+                <span class="price">R$ 0,04 a R$ 0,65 por KG</span>
+            </div>
+            <div class="product-item">
+                <img src="super_imgplastico-plastico-800.webp" alt="Produto 5">
+                <h3>Plástico</h3>
+                <p>Compre Plástico doado e reutilize.</p>
+                <span class="price">R$ 2,00 a R$ 4,20 por KG</span>
+            </div>
+            
+        </div>
+        
+            <button class="carousel-button next" onclick="moveSlide(1)">&#9654;</button>
+    </div>
+
+
+</body>
+
+<footer>
+    <div class="Infor">
+        BRASIL, SÃO PAULO <br>
+        AVENIDA FARIA LIMA - 1440 <br> <br>
+        itrashcontato@gmail.com <br>
+        (11)99667-7207 <br> <br>
+    </div>
+
+    <div class="iTrash">
+        iTrash <br>
+        Our commitment is to the Earth
+    </div>
+
+    <img class="Inovatech" src="Inovatech.svg" alt="Inovatech">
+
+</footer>
+
+<script>
+
+    //Criando variáveis constantes para obter os elementos pelo id
+    const botao = document.getElementById('botao');
+    const elemento = document.getElementById('elemento');
+    const fechar = document.getElementById('fechar')
+
+    //Código para ativar o pop-up
+    botao.addEventListener('click', function () {
+        if (elemento.style.display === 'none') {
+            elemento.style.display = 'block'
+        } else {
+            elemento.style.display = 'none';
+        }
+    });
+
+    fechar.addEventListener('click', function () {
+        elemento.style.display = 'none';
+    });
+
+</script>
+
+<script>
+    let currentSlide = 0;
+    const itemsPerView = 3;
+
+    function moveSlide(direction) {
+        const track = document.querySelector('.carousel-track');
+        const totalItems = document.querySelectorAll('.product-item').length;
+
+        currentSlide += direction;
+        const maxSlide = Math.ceil(totalItems / itemsPerView) - 1;
+
+        if (currentSlide < 0) {
+            currentSlide = maxSlide;
+        } else if (currentSlide > maxSlide) {
+            currentSlide = 0;
+        }
+
+        const offset = -(currentSlide * (100 / itemsPerView));
+        track.style.transform = `translateX(${offset}%)`;
+    }
+</script>
+
+</html>

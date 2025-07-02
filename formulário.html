@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>iTrash - Our Commitment is to the Earth</title>
+    <link rel="stylesheet" href="formulário.css">
+</head>
+
+<header>
+
+    <div class="Cabeçalho">
+
+        <div class="grid-conteiner">
+            <a href="../pag_principal/main menu.html">
+                <div class="grid-item">INICIAL</div>
+            </a>
+            <a href="../pag_postos/postos.html">
+                <div class="grid-item">POSTOS</div>
+            </a>
+            <a href="../pag_delivery/delivery.html">
+                <div class="grid-item">DELIVERY</div>
+            </a>
+        </div>
+
+
+        <img class="logo" src="iTrash_Logo_2.0.svg" alt="logo">
+
+        <div class="grid-conteiner2">
+            <a href="../pag_sobre/sobre.html">
+                <div class="grid-item2">SOBRE</div>
+            </a>
+            <a href="../pag_parceiros/parceiros.html">
+                <div class="grid-item2">PARCERIOS</div>
+            </a>
+            <a href="../pag_ranking/ranking.html">
+                <div class="grid-item2">RANKING</div>
+            </a>
+        </div>
+
+        <img id="botao" class="usuario" src="usuario-de-perfil.png" alt="usuario">
+
+    </div>
+
+    <ul class="anuncio">
+        <marquee behavior="static" direction="left">PRODUTOS 100% RECICLÁVEIS PARA SUA EMPRESA NO NOSSO MARKET PLACE!
+        </marquee>
+    </ul>
+
+    <div id="elemento" class="boxuser">
+        <form class="login">
+            <img src="email.svg" alt="email">
+            <input type="text" placeholder="E-mail"> <br>
+            <img src="senha.svg" alt="senha">
+            <input type="text" placeholder="Senha">
+            <input type="button" value="Enviar">
+            <input type="button" value="Esqueci minha Senha"> <br> <br>
+            <input type="button" value="Cadastre-Se">
+        </form>
+    </div>
+
+</header>
+
+<body>
+
+    <h3>Preencha os campos com seus dados,<br>
+        ao término, basta apertar no botão "Enviar" para o nosso time de Delivery!</h3>
+
+    <div class="meio">
+
+
+        <div class="forms">
+            <form action="">
+                <label for="fname">Nome</label>
+                <input class="loginl" type="text" id="fname" name="firstname" placeholder="Insira seu nome">
+
+                <label for="lname">Telefone</label>
+                <input class="loginl" type="text" id="lname" name="lastname" placeholder="Insira seu telefone">
+
+                <label for="cpf">CPF</label>
+                <input class="loginl" type="text" id="cpf" name="cpf" placeholder="Insira seu CPF">
+
+                <label for="endereço">Rua</label>
+                <input class="loginl" type="text" id="endereço" name="endereço" placeholder="Insira sua rua">
+
+                <label for="endereço">Número</label>
+                <input class="loginl" type="text" id="endereço" name="endereço" placeholder="Insira seu número">
+
+                <label for="endereço">Bairro</label>
+                <input class="loginl" type="text" id="endereço" name="endereço" placeholder="Insira seu bairro">
+
+                <label for="endereço">Cidade</label>
+                <input class="loginl" type="text" id="endereço" name="endereço" placeholder="Insira seu cidade">
+
+                <label for="tipo">Volume</label>
+                <input class="loginl" type="text" id="volume" name="volume" placeholder="Insira o volume">
+
+                <label for="country">Tipo de Material</label>
+
+                <select id="material" name="material">
+                    <option value="Vidro">Vidro</option>
+                    <option value="Plástico">Plástico</option>
+                    <option value="Orgânico">Orgânico</option>
+                    <option value="Outros">Outros</option>
+                </select>
+
+                <input class="loginl" type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <a href="../pag_delivery/delivery.html"> <img class="voltar"
+                src="login-arrow-symbol-entering-back-into-a-square_icon-icons.com_73221.png" alt="voltar"> </a>
+
+    </div>
+
+</body>
+
+<footer>
+    <div class="Infor">
+        BRASIL, SÃO PAULO <br>
+        AVENIDA FARIA LIMA - 1440 <br> <br>
+        itrashcontato@gmail.com <br>
+        (11)99667-7207 <br> <br>
+    </div>
+
+    <div class="iTrash">
+        iTrash <br>
+        Our commitment is to the Earth
+    </div>
+
+    <img class="Inovatech" src="Inovatech.svg" alt="Inovatech">
+
+</footer>
+
+<script>
+
+    //Criando variáveis constantes para obter os elementos pelo id
+    const botao = document.getElementById('botao');
+    const elemento = document.getElementById('elemento');
+    const fechar = document.getElementById('fechar')
+
+    //Código para ativar o pop-up
+    botao.addEventListener('click', function () {
+        if (elemento.style.display === 'none') {
+            elemento.style.display = 'block'
+        } else {
+            elemento.style.display = 'none';
+        }
+    });
+
+    fechar.addEventListener('click', function () {
+        elemento.style.display = 'none';
+    });
+
+
+
+</script>
+
+</html>
